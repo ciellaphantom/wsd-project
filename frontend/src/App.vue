@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>Verda Janset Güvel</h1>
-    <h2>Web Systems Development</h2>
+    <h2>Web Systems Design</h2>
     <p>Vue frontend is running.</p>
   </div>
 </template>
