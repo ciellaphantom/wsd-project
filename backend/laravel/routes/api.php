@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\TaskController;
+use App\Http\Controllers\Api\ShortLinkController;
 
 Route::get('/health', function () {
     return response()->json([
@@ -11,4 +12,6 @@ Route::get('/health', function () {
 
 Route::prefix('78709/v1')->group(function () {
     Route::apiResource('tasks', TaskController::class);
+    Route::apiResource('short-links', ShortLinkController::class)
+        ->only(['index', 'store', 'show']);
 });
